@@ -30,7 +30,7 @@
         <section class="draw-area">
             <label for="participant">Choose your name:</label>
 
-            <select id="participant">
+            <select id="participant" required>
                 <option value="">-- Select your name --</option>
                 <option value="Jenny">Jenny</option>
                 <option value="Jessica">Jessica</option>
@@ -42,6 +42,15 @@
                 <option value="Azi">Azi</option>
                 <option value="Jia">Jia</option>
             </select>
+
+            <label for="accessCode">Enter your private access code:</label>
+            <input
+                type="password"
+                id="accessCode"
+                placeholder="Enter the code sent to you"
+                autocomplete="off"
+                required
+            >
 
             <button id="drawButton" type="button">
                 Reveal My Person 🎁
